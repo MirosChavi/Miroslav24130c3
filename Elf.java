@@ -1,7 +1,7 @@
 package rpg;
 
 public class Elf extends Hero{
-    private static String[] imiona = {"Erro", "Legolas", "Alfsol", "Kaldia"};
+    private static String[] imiona = {"Erro", "Legolas", "Alfsol", "Kaldia"}; // Nadajemy imiona
     public Elf(String name, int health, int strength) {
         super(name, health, strength);
     }
