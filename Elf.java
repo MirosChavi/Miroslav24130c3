@@ -3,9 +3,9 @@ package rpg;
 public class Elf extends Hero{
     private static String[] imiona = {"Erro", "Legolas", "Alfsol", "Kaldia"}; // Nadajemy imiona
     public Elf(String name, int health, int strength) {
-        super(name, health, strength);
+        super(name, health, strength);  // w konstruktorze odwołujemy się do zmiennych naszej głównej klasy
     }
-    public static Elf getInstance(){
+    public static Elf getInstance(){ // używamy metod getInstance
         String imie = imiona[rand.nextInt(imiona.length)];
         int zdrowie = rand.nextInt(50,100);
         int sila = rand.nextInt(20,40);
