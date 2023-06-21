@@ -1,11 +1,11 @@
 package rpg;
 
 public class Dwarf extends Hero{
-    private static String[] imiona = {"Ogr", "Minion", "Gerald", "Milena"};
+    private static String[] imiona = {"Ogr", "Minion", "Gerald", "Milena"}; // Nadajemy imiona
     public Dwarf(String name, int health, int strength) {
-        super(name, health, strength);
+        super(name, health, strength); // w konstruktorze odwołujemy się do zmiennych naszej głównej klasy
     }
-    public static Dwarf getInstance(){
+    public static Dwarf getInstance(){ // Robimy metody getInstance
         String imie = imiona[rand.nextInt(imiona.length)];
         int zdrowie = rand.nextInt(50,100);
         int sila = rand.nextInt(20,40);
